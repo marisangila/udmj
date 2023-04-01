@@ -1,0 +1,27 @@
+.h1{
+    position: relative;
+    color: red;
+    left: 35%;
+}
+
+.p1{
+    background-color: black;
+    width: 500px;
+    height: 150px;
+}
+
+.p1txt{
+    color: white;
+    font-size: 25px;
+}
+
+.p2{
+    background-color: blue;
+    width: 500px;
+    height: 70px;
+}
+
+.p2txt{
+    color: red;
+    font-size: 15px;
+}

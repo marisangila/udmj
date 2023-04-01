@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exercicio-6.css">
+</head>
+<body>
+    <div class="divmae">
+        <hr>
+        <div class="div1">
+            <h2>Preencha as informações abaixo:</h2>
+
+            <label>Insira uma imagem:</label>
+            <br>
+            <input type="file" style="border: 3px solid white;" value="Escolher arquivo">
+            <br><br>
+
+            <div class="div2">
+                <div style="flex-direction: column; display: flex;">
+                    <label style="margin-right: 5px;">Nome:</label>
+                    <input type="text" style="margin-right: 10px;" class="input" placeholder="Insira seu nome"
+                        maxlength="250">
+                </div>
+                <div style="flex-direction: column; display: flex;">
+                    <label style="margin-right: 5px;">Sobrenome:</label>
+                    <input type="text" class="input" placeholder="Insira seu sobrenome" maxlength="250">
+                </div>
+            </div>
+            <div class="div2">
+                <div style="flex-direction: column; display: flex;">
+                    <label style="margin-right: 5px;">Data de Nasc:</label>
+                    <input type="date" style="margin-right: 10px;" class="input">
+                </div>
+                <div style="flex-direction: column; display: flex;">
+                    <label style="margin-right: 5px;">Idade:</label>
+                    <input type="number" style="margin-right: 10px;" class="input" placeholder="Insira sua idade">
+                </div>
+            </div>
+
+            <label>E-mail:</label>
+            <br>
+            <input type="email" class="input" required placeholder="Insira seu e-mail">
+            <br><br>
+        </div>
+        <div class="div1" style="border: 3px solid black; width: 500px; height: 275px; margin-bottom: 5px; border-radius: 5px;">
+            <div style="margin-left: 9px;">
+                <h2>Formação Acadêmica</h2>
+                <input type="radio">
+                <label>Ensino Fundamental</label>
+                <br>
+
+                <input type="radio">
+                <label>Ensino Médio</label>
+                <br>
+
+                <input type="radio">
+                <label>Ensino Superior</label>
+                <br>
+
+                <input type="radio">
+                <label>Pós Graduação - Especialização</label>
+                <br>
+
+                <input type="radio">
+                <label>Pós Graduação - Mestrado</label>
+                <br>
+
+                <input type="radio">
+                <label>Pós Graduação - Doutorado</label>
+                <br><br>
+
+                <label>Nome do curso:</label>
+                <select disabled>
+                    <option>Análise e Desenvolvimento de sistemas</option>
+                </select>
+            </div>
+        </div>
+        <div class="div1" style="border: 3px solid black; width: 500px; height: 210px; margin-bottom: 5px; border-radius: 5px;">
+            <div style="margin-left: 9px;">
+                <h2>Situação</h2>
+                <input type="radio" disabled>
+                <label>Em andamento</label>
+                <br>
+
+                <input type="radio" disabled>
+                <label>Completo</label>
+                <br>
+
+                <input type="radio" disabled>
+                <label>Incompleto</label>
+                <br><br>
+
+                <label>Qual a sua satisfação em relação ao curso?</label>
+                <input type="range">
+                <br><br>
+            </div>
+        </div>
+        <div class="div1" style="border: 3px solid black; width: 500px; height: 195px; border-radius: 5px;">
+            <div style="margin-left: 9px;">
+                <label>Descreva como está sendo a sua experiência até o momento:</label>
+                <br>
+
+                <textarea rows="10" cols="50" placeholder="Descreva aqui..." style="background-color: rgba(118, 118, 118, 0.3); color: white;"></textarea>
+                <br><br>
+
+                <label>Escolha uma senha:</label>
+                <input type="password" placeholder="Digite sua senha">
+                <br><br>
+
+                <label>Confirme sua senha:</label>
+                <input type="password" placeholder="Confirme sua senha">
+                <br><br>
+
+                <label>Confirme:</label>
+                <br>
+
+                <input type="checkbox">
+                <label>Você concorda com os termos?</label>
+                <br>
+
+                <input type="checkbox">
+                <label>Você gostaria de receber e-mails com notificações?</label>
+                <br><br><br>
+
+                <input type="submit" value="Salvar"
+                    style="width: 100px; height: 30px; background-color: MediumSlateBlue; color: white; font-size: 20px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
