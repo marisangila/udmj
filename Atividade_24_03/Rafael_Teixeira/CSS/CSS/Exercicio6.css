@@ -1,0 +1,30 @@
+body{
+    background-color: MediumSlateBlue;
+    color: white;
+    font-size: 20px;
+}
+.divmae{
+    background-color: MediumPurple;
+    height: 1350px;
+    width: 925px;
+    margin-left: 20px;
+}
+
+.div1{
+    margin-left: 30px;
+}
+
+.div2{
+    display:flex;
+}
+
+.div1{
+    
+}
+
+.input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid black ;
+}
