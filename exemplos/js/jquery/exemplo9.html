@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <span id="pnome"></span>
+        <br>
+        <label>Email:</label>
+        <input type="email" id="email">
+        <span id="pemail"></span>
+        <br>
+        <label>CPF:</label>
+        <input type="text" id="cpf">
+        <span id="pcpf"></span>
+        <br>
+        <input type="button" value="Enviar" id="btn">
+    </div>
+
+    <script>
+        //Valida se todos os campos de texto foram preenchidos.
+        $("#btn").click(function () {
+            // limpa os elementos <span>
+            $("span").html("");
+
+            if ($("#nome").val() == "") {
+                $("#pnome").html("*");
+                $("#pnome").css("color", "red");
+            } else if ($("#email").val() == "") {
+                $("#pemail").html("*");
+                $("#pemail").css("color", "red");
+            } else if ($("#cpf").val() == "") {
+                $("#pcpf").html("*");
+                $("#pcpf").css("color", "red");
+            } else {
+                alert("Dados enviados!");
+            }
+        }) 
+    </script>
+</body>
+
+</html>

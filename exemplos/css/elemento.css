@@ -1,0 +1,15 @@
+div{
+    background-color: cornflowerblue;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+p{
+    background-color: darksalmon;
+    width: 200px;
+    border: 10px solid black;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    margin-left: 25px;
+}

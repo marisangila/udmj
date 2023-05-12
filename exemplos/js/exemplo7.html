@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <label>Nome:</label>
+        <input type="text" id="nome" onchange="criarBotao()">
+    </div>
+
+    <script>
+        //Ao preencher a caixa de texto, a página cria um botão que exibe um alert com o texto digitado na caixa de texto.
+        function criarBotao() {
+            nome = document.getElementById("nome").value
+            if (nome != "") {
+                btn = document.createElement("input")
+                btn.setAttribute('type', 'button');
+                btn.setAttribute('value', 'Clique');
+                document.getElementById("container").appendChild(btn)                // btn.onclick = mostrarMensagem()
+
+                btn.onclick = function () {
+                    nome = document.getElementById("nome").value
+                    alert(`Hello World,${nome} !`)
+                }
+            }
+        }
+        function mostrarMensagem() {
+            nome = document.getElementById("nome").value
+            alert(`Hello World,${nome} !`)
+        }
+    </script>
+</body>
+
+</html>

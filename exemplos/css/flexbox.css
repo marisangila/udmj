@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    background-color: cornflowerblue;
+    margin: 10px;
+  }
+  
+  .item {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .container1 {
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+  }
+  .container2 {
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+  }
+  .container3 {
+    flex-flow: wrap row-reverse;
+  }
+  .container4 {
+    justify-content: center;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+  }

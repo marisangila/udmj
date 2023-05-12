@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <span id="pnome"></span>
+        <br>
+        <label>Email:</label>
+        <input type="email" id="email">
+        <span id="pemail"></span>
+        <br>
+        <label>CPF:</label>
+        <input type="text" id="cpf">
+        <span id="pcpf"></span>
+        <br>
+        <input type="button" value="Enviar" id="btn" onclick="validarCampos()">
+    </div>
+
+    <script>
+        //Valida se todos os campos de texto foram preenchidos.
+        function validarCampos() {
+            elementos = document.getElementsByTagName("span")
+            for (elemento of elementos) {
+                elemento.innerHTML = ""
+            }
+            if (document.getElementById("nome").value == "") {
+                elemento = document.getElementById("pnome")
+                elemento.innerHTML = "*"
+                elemento.style.color = "red"
+
+            } else if (document.getElementById("email").value == "") {
+                elemento = document.getElementById("pemail")
+                elemento.innerHTML = "*"
+                elemento.style.color = "red"
+            } else if (document.getElementById("cpf").value == "") {
+                elemento = document.getElementById("pcpf")
+                elemento.innerHTML = "*"
+                elemento.style.color = "red"
+            } else {
+                alert("Dados enviados!")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

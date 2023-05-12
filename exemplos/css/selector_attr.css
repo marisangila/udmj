@@ -1,0 +1,12 @@
+[class^="p-"]{
+    background-color: cornflowerblue;
+    width: 75%;
+}
+input[type="text"] {
+    width: 50%;
+}
+input[type="button"]{
+    background-color: cornflowerblue;
+    width: 25%;
+} 
+

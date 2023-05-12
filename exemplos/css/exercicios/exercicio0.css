@@ -1,0 +1,10 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+p{
+    font-style: italic;
+    color: grey;
+    font-size: 25px;
+}

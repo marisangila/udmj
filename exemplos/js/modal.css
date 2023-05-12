@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.modal {
+    display: none;
+    z-index: 1;
+    width: 50%;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 25px;
+    color: white;
+}
+
+.btn-close {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}

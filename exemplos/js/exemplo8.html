@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <label>Nome:</label>
+        <input type="text" id="nome" onchange="habilitarBotao()">
+        <input type="button" value="Clique" id="btn" disabled>
+
+    </div>
+
+    <script>
+        //Ao preencher a caixa de texto, o botão que está desabilitado é habilitado.
+        function habilitarBotao() {
+            if (document.getElementById("nome").value != "") {
+                nome = document.getElementById("btn").removeAttribute("disabled", "")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

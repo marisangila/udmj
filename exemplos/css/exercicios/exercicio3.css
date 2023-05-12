@@ -1,0 +1,19 @@
+.container{
+    width: 50%;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.container_primeira_imagem{
+    background-color: cadetblue;
+    margin-left: 100px;
+
+}
+.container_segunda_imagem{
+    background-color: coral;
+    margin-left: 200px;
+    
+}
+.container_terceira_imagem{
+    background-color: cornflowerblue;
+    margin-left: 300px;
+}

@@ -1,0 +1,25 @@
+.cabecalho{
+    color: red;
+    text-align: center;
+}
+.paragrafo1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: blue;
+}
+.paragrafo2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+.container_paragrafo1{
+    background-color: darksalmon;
+    height: 200px;
+    width: 500px;
+}
+.container_paragrafo2{
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 500px;
+
+}

@@ -1,0 +1,13 @@
+.btn{
+    background-color: cornflowerblue;
+    color: black;
+    width: 100px;
+}
+
+.btn:hover{
+    background-color: darkgray;
+    color: white;
+}
+.text:focus{
+    border-color: cornflowerblue;
+}
