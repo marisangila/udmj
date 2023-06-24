@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+:root {
+  --cor-primaria: #d6a354;
+  --background-color: #040404;
+  --content-color: #0f0f0f;
+  --black: #000;
+  --title: 30px;
+  --subtitle: 16px;
+}
+
+.content {
+  background-color: var(--content-color);
+  max-width: 440px;
+  width: 100%;
+  padding: 37px 33px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px;
+}
+
+.title {
+  font-size: var(--title);
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: var(--subtitle);
+  font-weight: 400;
+  color: #fff;
+}
+
+input {
+  background-color: #000;
+  padding: 11px 16px;
+  border: 1px solid transparent;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* input:focus {
+  border: 1px solid var(--cor-primaria);
+} */
+
+.link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.submit {
+  background-color: var(--cor-primaria);
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.password {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.input-password {
+  width: 80%;
+  padding: 11px 0;
+}
+
+.ri-eye-line {
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.aviso {
+  color: red;
+  font-size: 14px;
+  visibility: hidden;
+}

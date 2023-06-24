@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: #040404;
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: 25px;
+}
+
+.nav-item {
+  margin: 0 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.login-button {
+  margin-left: auto;
+}
+
+.login-button button {
+  border: none;
+  padding: 10px 23px;
+  border-radius: 5px;
+  background-color: #d6a354;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  margin: 1.3rem;
+}
+
+#titulo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#subtitulo {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+input {
+  width: 95%;
+  margin-bottom: 0.6rem;
+  background: #040404;
+  letter-spacing: 0.5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+select {
+  width: 100%;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.6rem;
+  background: #040404;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+campo {
+  position: relative;
+}
+
+.menssagem-sucesso {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  left: 44%;
+  background-color: rgb(43, 143, 43);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 40px 0;
+  transform: translateY(-30px);
+  animation: fade-in 4s linear forwards;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.notificantion__progress-sucesso {
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
+  width: calc(100% - 2%);
+  height: 3px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: inherit;
+  animation: loads 3s 0.25s linear forwards;
+}
+
+@keyframes loads {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fade-in {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.botao {
+  margin-top: 20px;
+  background-color: #d6a354;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  width: 95%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .nav-item {
+    display: none;
+  }
+  .login-button {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
+}

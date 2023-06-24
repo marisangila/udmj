@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Faça Login</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h2 class="title">Faça Login</h2>
+      </header>
+
+      <form action="./login.php"  method="post" class="form-login" id="form">
+        <div class="input-group">
+          <label for="">Nome</label>
+          <input type="text" id="user" name="usuario" />
+        </div>
+        <div class="input-group">
+          <label for="">Senha</label>
+          <div class="password">
+            <input type="password" class="input-password" id="senha" name="senha" />
+            <div onclick="showPassword()">
+              <i class="ri-eye-line"></i>
+            </div>
+          </div>
+          <a href="" class="link">Esqueci minha senha</a>
+          <span class="aviso" id="aviso"
+            >Preencha o formulário com seus dados para continuar</span
+          >
+        </div>
+        <div class="input-group">
+          <input type="submit" value="Entrar" class="submit" />
+        </div>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
